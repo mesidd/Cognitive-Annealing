@@ -46,8 +46,8 @@ To replicate the results, perform the following steps:
 ```bash
 # 1. Clone the repository
 
-git clone [https://github.com/mesidd/Cognitive-Annealing.git](https://github.com/mesidd/Cognitive-Annealing.git)
-cd Cognitive-Annealing/TSP/SAT
+git clone https://github.com/mesidd/Cognitive-Annealing.git
+cd Cognitive-Annealing/SAT
 
 # 2. Run the solver (Results will vary slightly due to stochastic process)
 
