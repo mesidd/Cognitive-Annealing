@@ -47,7 +47,7 @@ class FoldingSolver:
         snapshot_dir = "folding_snapshots"
         if params['snapshot_interval'] > 0:
             if os.path.exists(snapshot_dir):
-                shutil.rmtree(snapshot_dir) # Clear old snapshots
+                shutil.rmtree(snapshot_dir)
             os.makedirs(snapshot_dir)
 
         current_energy_obj = self.get_energy()
@@ -89,7 +89,6 @@ class FoldingSolver:
                 with open(best_pdb_file, 'w') as f:
                     PDBFile.writeFile(self.topology, best_coords, f)
             
-            # [THE FIX] Snapshot logic is now at the main loop level.
             # It saves the CURRENT state, showing the entire trajectory.
             if params['snapshot_interval'] > 0 and (i+1) % params['snapshot_interval'] == 0:
                 snapshot_file = os.path.join(snapshot_dir, f"snapshot_{i+1:06d}.pdb")
@@ -107,7 +106,6 @@ class FoldingSolver:
         return best_pdb_file
 
 def verify_final_result(ground_truth_raw_pdb, final_folded_pdb):
-    # ... (This function is unchanged and correct)
     print("\n--- Phase 5: Final Verification ---")
     clean_ref_pdb = "clean_ground_truth.pdb"
     print(f"1. Creating a clean reference from '{ground_truth_raw_pdb}'...")
