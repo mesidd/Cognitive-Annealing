@@ -52,7 +52,7 @@ To replicate the results, perform the following steps:
 # 1. Clone the repository
 
 git clone https://github.com/mesidd/Cognitive-Annealing.git
-cd Cognitive-Annealing/TSP/GENERATIVE_DRUG_DISCOVERY
+cd Cognitive-Annealing/GENERATIVE_DRUG_DISCOVERY
 
 # 2. Install dependencies
 
