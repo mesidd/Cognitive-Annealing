@@ -44,8 +44,8 @@ To replicate the results, perform the following steps:
 ```bash
 # 1. Clone the repository
 
-git clone [https://github.com/mesidd/Cognitive-Annealing.git](https://github.com/mesidd/Cognitive-Annealing.git)
-cd Cognitive-Annealing/TSP/PROTEIN_FOLDING
+git clone https://github.com/mesidd/Cognitive-Annealing.git
+cd Cognitive-Annealing/PROTEIN_FOLDING
 
 # 2. Install dependencies (Requires Python 3.x)
 
