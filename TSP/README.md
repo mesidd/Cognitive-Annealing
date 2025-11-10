@@ -4,9 +4,10 @@ This module demonstrates the application of the **Cognitive Annealing** general 
 
 ---
 
-## 1. What is the TSP?
+## What is the TSP?
 
 The **Traveling Salesman Problem (TSP)** is a foundational **NP-hard** problem in combinatorial optimization.  
+
 Given a list of cities and the distances between each pair, the goal is to find the **shortest possible route** that visits each city exactly once and returns to the origin.
 
 **Complexity:**  
@@ -16,7 +17,29 @@ This forces both **industry** and **research** to rely on **fast, highly accurat
 
 ---
 
-## 2. Why Cognitive Annealing is Superior?
+To solve a new **NP-hard problem**, you only need to define **two components**:
+
+---
+
+### 1. The State & Mutator
+- **State:** Defines what a *solution* looks like.  
+  *Example:* For the Traveling Salesman Problem (TSP), a state could be a **list of cities** representing a tour.  
+- **Mutator:** Describes how to make a **small, random change** to the current state.  
+  *Example:* Swap two cities to create a new neighboring route.
+
+---
+
+### 2. The Objective Function (Metric)
+- A simple **function** that scores the quality of a given state.  
+  *Example:* In TSP, this could be the **total distance** of the route.  
+- The solver’s goal is to **minimize** (or **maximize**) this metric over time.
+
+---
+
+By defining just these two components, the **Cognitive Annealing engine** can adapt to entirely different problem domains — from **routing** and **scheduling** to **molecular design** and **logical optimization** — without changing the core solver logic.
+
+
+## Why Cognitive Annealing is Superior?
 
 Our framework, **Cognitive Annealing**, solves the TSP by defining the problem’s **State** and **Objective Function**,  
 then passing it to the **general 350-line Annealing Core**.
@@ -26,7 +49,7 @@ our lightweight architecture achieves a **world-class balance of speed and optim
 
 ---
 
-### 🧩 Comparative Metrics
+### Comparative Metrics
 
 | Metric / Instance | Simple Construction (Greedy Baseline) | Cognitive Annealing (350-Line Core) | Performance Jump |
 |--------------------|----------------------------------------|-------------------------------------|------------------|
@@ -44,7 +67,7 @@ The true value for **high-performance computing (HPC)** applications
 Our solver achieves these results with **minimal latency**, running directly on **standard commodity hardware**.
 
 
-## 🧠 Feature Comparison
+## Feature Comparison
 
 | **Feature** | **LKH / Concorde** | **Cognitive Annealing (Our Solver)** |
 |--------------|-------------------------------|--------------------------------------|
