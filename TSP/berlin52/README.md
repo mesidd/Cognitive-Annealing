@@ -21,7 +21,7 @@ To replicate the results, perform the following steps:
 ```bash
 # 1. Clone the repository
 
-git clone [https://github.com/mesidd/Cognitive-Annealing.git](https://github.com/mesidd/Cognitive-Annealing.git)
+git clone https://github.com/mesidd/Cognitive-Annealing.git
 cd Cognitive-Annealing/TSP/berlin52
 
 # 2. Install dependencies (Requires Python 3.x and matplotlib)
