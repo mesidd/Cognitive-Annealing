@@ -111,20 +111,6 @@ Once defined, plug these into the **Cognitive Annealing engine**, and the solver
 Note: Each case study may require additional dependencies or environment setup.
 Please refer to the respective folder’s documentation for detailed installation instructions.
 
-## 🧾 Citing This Work
-
-If you use this framework or code in your research, please cite our paper:
-
-```bibtex
-@misc{sharma2025cognitive,
-  title        = {Cognitive Annealing: A General Heuristic Framework for Diverse NP-Hard Optimization},
-  author       = {Siddhartha Sharma},
-  year         = {2025},
-  eprint       = {YOUR_ARXIV_ID_HERE},  % e.g., 2511.12345
-  archivePrefix= {arXiv},
-  primaryClass = {cs.AI}
-}
-
 ## 📄 License
 
 This project is licensed under the **MIT License**.  
